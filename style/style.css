@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title{
+  font-family: "Dancing Script", cursive;  
+  text-align: center;
+  animation-name: change;
+  transition: all ease-in-out 1s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change{
+  0% {color: rgb(255, 255, 255);}
+  50% {color: rgb(0, 0, 0);}
+  100% {color: rgb(255, 255, 255);}
+}
+
+input {
+  border: none;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+input:hover {
+  background-color: #f3767c;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: #f3767c;
+  gap: 1em;
+}
+
+.calculator {
+  background-color: #1e1c1f;
+  background-image: linear-gradient(
+    to right,
+    #39383b,
+    #323134,
+    #2b2a2d,
+    #242326,
+    #1e1c1f
+  );
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 56px 53px 5px 21px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 56px 53px 5px 21px rgba(0, 0, 0, 0.2);
+  box-shadow: 56px 53px 5px 21px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  padding: 1em;
+}
+
+.display input {
+  width: 100%;
+  border: none;
+  background-color: #a2af77;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 1rem;
+}
+
+.display input:focus {
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  gap: 5px;
+}
+
+.buttons input {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+}
+
+.buttons input:hover {
+  background-color: #58595b;
+}
+
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 1em;
+  gap: 5px;
+}
+
+.numbers input {
+  font-size: 1.5rem;
+}
+
+.zero {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.equal{
+  color: white;
+  background-color: rgb(211, 60, 60);
+}
+
+.equal:hover {
+  background-color: #f3767c;
+}
+
+.operators{
+  background-color: #323134;
+  color: white;
+  transition: all ease-in-out .3s;
+}
+
+.operators:hover{
+  background-color: #58595b;
+}

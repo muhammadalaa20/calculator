@@ -1,0 +1,9 @@
+{
+    "liveFrame.url": "http://localhost:3000/",
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.debugOnExternalPreview": false,
+    "liveFrame.title": "Local Development",
+    "cSpell.words": [
+        "Landy"
+    ]
+}
